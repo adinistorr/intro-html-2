@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<header>
+    <nav>
+        <span>Navigation</span>
+    </nav>
+</header> 
+
+<section>
+    <article>Article Title</article>
+</section>
+
+<br><br>
+
+<body style="padding: 1em 1em;">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th>First header</th>
+                <th>Second header</th>
+                <th>Third header</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>
+                First Cell
+            </td>
+            <td colspan="2">
+                Second Cell
+            </td>
+        </tr>
+        <tr>
+            <td>
+                First Cell
+            </td>
+            <td rowspan="2">
+                Second Cell
+            </td>
+            <td>Third Cell</td>
+        </tr>
+        <tr>
+            <td>
+                First Cell
+            </td>
+            <td>
+                Second Cell
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+    <form action="" method="GET">
+        <label for="first-name">First name:</label>
+        <br>
+        <input type="text" id="first-name" name="first-name-input" placeholder="Your Name" tabindex="0">
+
+        <br><br>
+
+        <label for="password-input">Password:</label>
+        <br>
+        <input type="password" id="password-input" name="password" placeholder="Enter password" tabindex="1">
+
+        <br><br>
+
+        <label for="comments-section">Comments:</label>
+        <br>
+        <textarea name="Comments" id="comments-section" placeholder="Share your thoughts" style="margin: 0px; width: 270px; height: 50px;" tabindex="3"></textarea>
+    
+        <br><br>
+
+        <input type="hidden" name="Account" value="This is a hidden field" />
+
+
+        <input type="checkbox" name="fruit" value="apple" id="checkbox-apple" tabindex="2"/>
+        <label for="checkbox-apple">Apple</label><br>
+        <input type="checkbox" name="fruit" value="orange" id="checkbox-orange" tabindex="4"/>
+        <label for="checkbox-orange">Orange</label><br>
+        <input type="checkbox" name="fruit" value="lemon" id="checkbox-lemon" tabindex="7"/>
+        <label for="checkbox-lemon">Lemon</label>
+
+        <br><br>
+
+        <input type="radio" id="male" name="gender" value="male" tabindex="5">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" tabindex="8">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" tabindex="6">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <label for="cars">Choose a car:</label>
+
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes" selected>Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Order Details</legend>
+            <input type="text" id="Quantity" placeholder="Insert quantity"/>
+            <br><br>
+            <textarea style="margin: 0px; width: 270px; height: 50px;" id="Remarks"></textarea>
+        </fieldset>
+
+        <br><br>
+
+        <input type="reset" name="resetBtn" value="Reset the form" />
+        <input type="submit" name="submitBtn" value="Apply Now" />
+
+    </form>
+
+    <iframe 
+        name="iframeWikipedia"
+        width="400" height="400"
+        src="http://www.wikipedia.org"
+        frameborder="yes"
+        scrolling="yes">
+    </iframe>
+
+</body>
+</html>
